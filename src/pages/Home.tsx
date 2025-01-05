@@ -3,9 +3,8 @@ import Companies from "../components/Companies";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Projects from "../components/Projects";
-// import Experience from "../components/Experience";
-// import Projects from "../components/Projects";
-// import Contact from "../components/Contact";
+import Stats from "../components/Stats";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -13,6 +12,8 @@ const Home = () => {
       <Header/>
       <AboutMe />
       <Companies/>
+      <Testimonials/>
+      <Stats/>
       <Projects />
       <Footer />
     </div>

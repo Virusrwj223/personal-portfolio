@@ -7,7 +7,7 @@ const CompaniesSection = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px 10%;
+  padding: 50px 10px 10px 10px 10%;
 `;
 
 const CompaniesContainer = styled.div`

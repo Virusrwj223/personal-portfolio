@@ -1,6 +1,8 @@
 import styled from "styled-components";
-import profileImage from "../assets/raj.jpg"; // Replace with your actual image path
+import profileImage from "../assets/raj.jpg"; 
 import { theme } from "../styles/theme";
+import resume from "../assets/HrishirajMandalResume.pdf";
+
 
 const AboutSection = styled.section`
   display: flex;
@@ -56,28 +58,51 @@ const ImageContainer = styled.div`
   }
 `;
 
-const CVButton = styled.a`
+const ButtonContainer = styled.div`
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
+`;
+
+const Button = styled.a`
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
-  background-color: ${theme.lightBg};
-  color: ${theme.darkGreen};
-  border: 1px solid ${theme.border};
   padding: 12px 18px;
   font-size: 16px;
   font-weight: bold;
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
-  margin-top: 20px;
   cursor: pointer;
 
-  &:hover {
-    background-color:${theme.primaryTeal};
-    color: ${theme.textPrimary};
+  &.learn-more {
+    background-color:${theme.lightBg};
+    color: ${theme.darkGreen};
+    border: 1px solid ${theme.border};
+
+    &:hover {
+      background-color: ${theme.lightBg};
+      color: ${theme.textPrimary};
+    }
+    
+  }
+
+  &.cv-button {
+    background-color: ${theme.primaryTeal};
+    color: #ffffff;
+    border: 1px solid ${theme.primaryTeal};
+
+    &:hover {
+      background-color: ${theme.darkGreen};
+    }
   }
 `;
-
 const AboutMe = () => {
   return (
     <AboutSection id="about">
@@ -89,12 +114,14 @@ const AboutMe = () => {
           I have many interests.
         </p>
         <p>Scroll on to get to know me!</p>
-        <CVButton href="../assets/HrishirajMandalResume.pdf" download>
-          <span>Resume</span>
-        </CVButton>
+        <ButtonContainer>
+          <Button href="/aboutMe" className="learn-more">About Me</Button>
+          <Button href={resume} target="_blank" rel="noopener noreferrer" className="cv-button">Resume</Button>
+        </ButtonContainer>
+        
       </TextContainer>
       <ImageContainer>
-        <img src={profileImage} alt="Ethan's Profile" />
+        <img src={profileImage} alt="Raj's Profile" />
       </ImageContainer>
     </AboutSection>
   );

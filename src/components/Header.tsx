@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../styles/theme";
+import personalLogo from "../assets/personalLogo.png";
+
 
 const HeaderContainer = styled.header`
   position: fixed;
@@ -14,23 +16,30 @@ const HeaderContainer = styled.header`
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
-  border-radius: 12px; /* Rounded corners */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
   z-index: 1000;
 `;
 
-const Logo = styled.div`
-  position: absolute;
-  left: 20px;
-  font-size: 24px;
-  font-weight: bold;
-  color: ${theme.darkGreen};
+const LogoContainer = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Space between image and text */
+`;
+
+const LogoImage = styled.img`
+  width: 40px; /* Adjust image size */
+  height: 40px;
+  border-radius: 50%; /* Optional: Makes it circular */
+  object-fit: cover;
 `;
 
 const NavLinks = styled.nav`
   display: flex;
   align-items: center;
   gap: 30px;
+  flex-grow: 1;
+  justify-content: center;
 
   a {
     text-decoration: none;
@@ -45,16 +54,32 @@ const NavLinks = styled.nav`
   }
 `;
 
+const Button = styled.a`
+  background-color: ${theme.primaryTeal};
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease-in-out;
+
+  &:hover {
+    background-color: ${theme.darkGreen};
+    color: #ffffff;
+  }
+`;
+
 const Header = () => {
   return (
     <HeaderContainer>
-      <Logo>
-        <span style={{ fontSize: "32px", fontWeight: "bold" }}>RAJ</span>
-      </Logo>
+      <LogoContainer href="/">
+        <LogoImage src={personalLogo} alt="Logo"/>
+      </LogoContainer>
       <NavLinks>
-        <a href="#about">About Me</a>
-        <a href="#blog">Blog</a>
+        <a href="/aboutMe">About Me</a>
+        <a href="https://medium.com/@mhrishiraj">Blog</a>
       </NavLinks>
+      <Button href="/contactMe">Connect</Button>
     </HeaderContainer>
   );
 };

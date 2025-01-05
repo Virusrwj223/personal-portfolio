@@ -4,7 +4,7 @@ import project2Img from "../assets/bare.png";
 import { theme } from "../styles/theme";
 
 const ProjectsSection = styled.section`
-  padding: 80px 10%;
+  padding: 20px 10%;
   text-align: center;
 `;
 
@@ -61,7 +61,7 @@ const ViewButton = styled.a`
   display: inline-block;
   padding: 8px 12px;
   background-color: ${theme.primaryTeal};
-  color: #fff;
+  color: ${theme.darkGreen};
   font-weight: bold;
   text-decoration: none;
   border-radius: 6px;
