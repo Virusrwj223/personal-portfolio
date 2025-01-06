@@ -8,8 +8,33 @@ import user2 from "../assets/vjc.png";
 import { theme } from "../styles/theme";
 
 const TestimonialsSection = styled.section`
-  padding: 10px 10%;
+  padding: 50px 10%;
   text-align: center;
+  
+
+  @media (max-width: 900px) {
+    padding: 40px 5%;
+    width: 350px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 30px 4%;
+    width: 350px;
+  }
+`;
+
+const Title = styled.h2`
+  font-size: 32px;
+  color: ${theme.textPrimary};
+  margin-bottom: 30px;
+
+  @media (max-width: 900px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 `;
 
 const CarouselWrapper = styled.div`
@@ -26,6 +51,16 @@ const TestimonialCard = styled.div`
   text-align: left;
   font-size: 18px;
   line-height: 1.6;
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+    padding: 25px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+    padding: 20px;
+  }
 
   &::before {
     font-size: 50px;
@@ -48,6 +83,11 @@ const UserImage = styled.img`
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
+
+  @media (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const UserDetails = styled.div`
@@ -57,28 +97,45 @@ const UserDetails = styled.div`
 const UserName = styled.h4`
   font-size: 18px;
   margin: 0;
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 `;
 
 const UserPosition = styled.p`
   font-size: 14px;
   color: ${theme.textSecondary};
   margin: 0;
+
+  @media (max-width: 900px) {
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 12px;
+  }
 `;
 
 const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 700, // Slightly slower transition
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 4000,
+    autoplaySpeed: 5000, // Increased to 5s for better readability
+    arrows: false, // Hides arrows for a cleaner look
   };
 
   return (
     <TestimonialsSection>
-      <h2>What People Say</h2>
+      <Title>What People Say</Title>
       <CarouselWrapper>
         <Slider {...settings}>
           <div>
@@ -96,7 +153,7 @@ const Testimonials = () => {
 
           <div>
             <TestimonialCard>
-              "[Hrishiraj] will pour time and effort into what he feels are worthwhile causes"
+              "[Hrishiraj] will pour time and effort into what he feels are worthwhile causes."
               <UserInfo>
                 <UserImage src={user2} alt="User 2" />
                 <UserDetails>

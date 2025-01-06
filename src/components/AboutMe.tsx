@@ -3,7 +3,6 @@ import profileImage from "../assets/raj.jpg";
 import { theme } from "../styles/theme";
 import resume from "../assets/HrishirajMandalResume.pdf";
 
-
 const AboutSection = styled.section`
   display: flex;
   align-items: center;
@@ -14,6 +13,12 @@ const AboutSection = styled.section`
   @media (max-width: 900px) {
     flex-direction: column;
     text-align: center;
+    gap: 40px; /* Reduce gap on smaller screens */
+    padding: 60px 5%; /* Reduce side padding */
+  }
+
+  @media (max-width: 600px) {
+    padding: 50px 4%;
   }
 `;
 
@@ -24,12 +29,28 @@ const TextContainer = styled.div`
     font-size: 36px;
     font-weight: bold;
     color: ${theme.textPrimary};
+
+    @media (max-width: 900px) {
+      font-size: 30px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 26px;
+    }
   }
 
   p {
     font-size: 18px;
     color: ${theme.textSecondary};
     line-height: 1.6;
+
+    @media (max-width: 900px) {
+      font-size: 16px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 15px;
+    }
   }
 
   .highlight {
@@ -43,18 +64,25 @@ const ImageContainer = styled.div`
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  height: auto;
+  width: 400px;
+  height: 400px;
 
   @media (max-width: 900px) {
-    width: 100%;
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 600px) {
+    width: 250px;
+    height: 250px;
   }
 
   img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
-    border-radius: 12px;
+    border-radius: 50%;
   }
 `;
 
@@ -65,6 +93,12 @@ const ButtonContainer = styled.div`
 
   @media (max-width: 900px) {
     justify-content: center;
+  }
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 `;
 
@@ -82,7 +116,7 @@ const Button = styled.a`
   cursor: pointer;
 
   &.learn-more {
-    background-color:${theme.lightBg};
+    background-color: ${theme.lightBg};
     color: ${theme.darkGreen};
     border: 1px solid ${theme.border};
 
@@ -90,7 +124,6 @@ const Button = styled.a`
       background-color: ${theme.lightBg};
       color: ${theme.textPrimary};
     }
-    
   }
 
   &.cv-button {
@@ -102,7 +135,14 @@ const Button = styled.a`
       background-color: ${theme.darkGreen};
     }
   }
+
+  @media (max-width: 600px) {
+    width: 80%;
+    font-size: 14px;
+    padding: 10px 15px;
+  }
 `;
+
 const AboutMe = () => {
   return (
     <AboutSection id="about">
@@ -118,7 +158,6 @@ const AboutMe = () => {
           <Button href="/aboutMe" className="learn-more">About Me</Button>
           <Button href={resume} target="_blank" rel="noopener noreferrer" className="cv-button">Resume</Button>
         </ButtonContainer>
-        
       </TextContainer>
       <ImageContainer>
         <img src={profileImage} alt="Raj's Profile" />

@@ -10,6 +10,13 @@ const ContactSection = styled.section`
   align-items: flex-start;
   padding: 120px 10% 80px; 
   gap: 100px;
+
+  @media (max-width: 900px) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px 10% 50px;
+  }
 `;
 
 const FormContainer = styled.div`
@@ -19,12 +26,23 @@ const FormContainer = styled.div`
   border-radius: 12px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   width: 900px;
+  align-items: center;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    padding: 5%;
+  }
 `;
 
 const ContactDetails = styled.div`
   flex: 0.8; 
   padding: 50px;
   border-radius: 12px;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    padding: 30px;
+  }
 `;
 
 const Title = styled.h2`
@@ -55,6 +73,10 @@ const Input = styled.input`
   &:focus {
     border-color: ${theme.primaryTeal};
   }
+
+  @media (max-width: 900px) {
+    width: 80%;
+  }
 `;
 
 const Textarea = styled.textarea`
@@ -72,6 +94,10 @@ const Textarea = styled.textarea`
 
   &:focus {
     border-color: ${theme.primaryTeal};
+  }
+
+  @media (max-width: 900px) {
+    width: 80%;
   }
 `;
 
@@ -99,6 +125,11 @@ const ContactItem = styled.div`
   margin-bottom: 15px;
   font-size: 16px;
   color: ${theme.textPrimary};
+
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const ContactDetail = () => {
