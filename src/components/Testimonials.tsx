@@ -14,12 +14,12 @@ const TestimonialsSection = styled.section`
 
   @media (max-width: 900px) {
     padding: 40px 5%;
-    width: 350px;
+    width: 300px;
   }
 
   @media (max-width: 600px) {
     padding: 30px 4%;
-    width: 350px;
+    width: 300px;
   }
 `;
 
