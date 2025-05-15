@@ -69,8 +69,8 @@ const ViewButton = styled.a`
   font-size: 14px;
 
   &:hover {
-    background-color:${theme.darkGreen};
-    color:white;
+    background-color: ${theme.darkGreen};
+    color: white;
   }
 `;
 
@@ -86,7 +86,9 @@ const Projects = () => {
             <ProjectDescription>
               A decentralized application for secure rental transactions.
             </ProjectDescription>
-            <ViewButton href="https://bar-e.onrender.com/">View Project</ViewButton>
+            <ViewButton href="https://bar-e.onrender.com/">
+              View Project
+            </ViewButton>
           </ProjectContent>
         </ProjectCard>
 
@@ -97,7 +99,9 @@ const Projects = () => {
             <ProjectDescription>
               An AI-enabled restaurant finder for foodies
             </ProjectDescription>
-            <ViewButton href="https://www.theoma.site/">View Project</ViewButton>
+            <ViewButton href="https://www.theoma.site/">
+              View Project
+            </ViewButton>
           </ProjectContent>
         </ProjectCard>
       </ProjectsContainer>

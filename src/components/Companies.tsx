@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import smartkarmaLogo from "../assets/Smartkarma.png"; 
-import aStar from "../assets/AStar.png"; 
-import fintechSoc from "../assets/FintechSoc.png"; 
+import smartkarmaLogo from "../assets/Smartkarma.png";
+import aStar from "../assets/AStar.png";
+import nus from "../assets/nus.jpg";
 
 const CompaniesSection = styled.section`
   display: flex;
@@ -61,7 +61,7 @@ const Companies = () => {
       <CompaniesContainer>
         <Logo src={smartkarmaLogo} alt="Smartkarma" />
         <Logo src={aStar} alt="AStar" />
-        <Logo src={fintechSoc} alt="FintechSoc" />
+        <Logo src={nus} alt="NUS" />
       </CompaniesContainer>
     </CompaniesSection>
   );
