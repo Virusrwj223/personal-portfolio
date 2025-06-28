@@ -2,6 +2,8 @@ import styled from "styled-components";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import skTestimonial from "../assets/SK-general.pdf";
+import vjcTestimonial from "../assets/VJC_Testimonial.pdf";
 
 import user1 from "../assets/SMLogo.png";
 import user2 from "../assets/vjc.png";
@@ -10,7 +12,6 @@ import { theme } from "../styles/theme";
 const TestimonialsSection = styled.section`
   padding: 50px 10%;
   text-align: center;
-  
 
   @media (max-width: 900px) {
     padding: 40px 5%;
@@ -140,9 +141,17 @@ const Testimonials = () => {
         <Slider {...settings}>
           <div>
             <TestimonialCard>
-              "Hrishiraj showcased a rare combination of technical expertise and an unyielding willingness to learn."
+              "Hrishiraj showcased a rare combination of technical expertise and
+              an unyielding willingness to learn."
               <UserInfo>
-                <UserImage src={user1} alt="User 1" />
+                <a
+                  href={skTestimonial}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: "8px", fontSize: "0.9rem" }}
+                >
+                  <UserImage src={user1} alt="User 1" />
+                </a>
                 <UserDetails>
                   <UserName>Surya Ravikumar</UserName>
                   <UserPosition>VP, Data & Strategy of Smartkarma</UserPosition>
@@ -153,12 +162,22 @@ const Testimonials = () => {
 
           <div>
             <TestimonialCard>
-              "[Hrishiraj] will pour time and effort into what he feels are worthwhile causes."
+              "[Hrishiraj] will pour time and effort into what he feels are
+              worthwhile causes."
               <UserInfo>
-                <UserImage src={user2} alt="User 2" />
+                <a
+                  href={vjcTestimonial}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: "8px", fontSize: "0.9rem" }}
+                >
+                  <UserImage src={user2} alt="User 2" />
+                </a>
                 <UserDetails>
                   <UserName>Liew Hui Min</UserName>
-                  <UserPosition>Form Teacher of Victoria Junior College</UserPosition>
+                  <UserPosition>
+                    Form Teacher of Victoria Junior College
+                  </UserPosition>
                 </UserDetails>
               </UserInfo>
             </TestimonialCard>
