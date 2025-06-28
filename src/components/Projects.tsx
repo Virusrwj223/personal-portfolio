@@ -99,7 +99,7 @@ const Projects = () => {
             <ProjectDescription>
               An AI-enabled restaurant finder for foodies
             </ProjectDescription>
-            <ViewButton href="https://www.theoma.site/">
+            <ViewButton href="https://omagator-backend.vercel.app/">
               View Project
             </ViewButton>
           </ProjectContent>
