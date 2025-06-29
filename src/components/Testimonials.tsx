@@ -4,9 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import skTestimonial from "../assets/SK-general.pdf";
 import vjcTestimonial from "../assets/VJC_Testimonial.pdf";
+import ariaCert from "../assets/ARIA_Certificate.pdf";
 
 import user1 from "../assets/SMLogo.png";
 import user2 from "../assets/vjc.png";
+import user3 from "../assets/astarLogo.png";
 import { theme } from "../styles/theme";
 
 const TestimonialsSection = styled.section`
@@ -139,6 +141,30 @@ const Testimonials = () => {
       <Title>What People Say</Title>
       <CarouselWrapper>
         <Slider {...settings}>
+          <div>
+            <TestimonialCard>
+              "What impressed me most is Raj's agility. Raj is always able to
+              overcome technical challenges efficiently and exhibits a high
+              spirit of teamwork to deliver a greater good."
+              <UserInfo>
+                <a
+                  href={ariaCert}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ marginTop: "8px", fontSize: "0.9rem" }}
+                >
+                  <UserImage src={user3} alt="User 3" />
+                </a>
+                <UserDetails>
+                  <UserName>Dr. Liu Ning</UserName>
+                  <UserPosition>
+                    Senior Scientist I, Vice-Group Director
+                  </UserPosition>
+                </UserDetails>
+              </UserInfo>
+            </TestimonialCard>
+          </div>
+
           <div>
             <TestimonialCard>
               "Hrishiraj showcased a rare combination of technical expertise and
