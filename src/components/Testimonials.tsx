@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import skTestimonial from "../assets/SK-general.pdf";
 import vjcTestimonial from "../assets/VJC_Testimonial.pdf";
-import ariaCert from "../assets/ARIA_Certificate.pdf";
+import ariaCert from "../assets/astar_testimonial and cert.pdf";
 
 import user1 from "../assets/SMLogo.png";
 import user2 from "../assets/vjc.png";
