@@ -1,15 +1,17 @@
-import ContactDetail from "../components/ContactDetail";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import ContactDetail from "../components/sections/ContactDetail";
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div>
-        <Header/>
-        <ContactDetail/>
-        <Footer />
-    </div>
-  );
-};
+    <main className="container">
+      <section className="page-header">
+        <h1>Contact</h1>
+        <p>
+          Feel free to reach out for opportunities, collaborations, or technical
+          discussions.
+        </p>
+      </section>
 
-export default Contact;
+      <ContactDetail />
+    </main>
+  );
+}

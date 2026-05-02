@@ -1,23 +1,11 @@
-import AboutMe from "../components/AboutMe";
-import Companies from "../components/Companies";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import Projects from "../components/Projects";
-import Stats from "../components/Stats";
-import Testimonials from "../components/Testimonials";
+import Hero from "../components/sections/Hero";
+import About from "../components/sections/About";
 
-const Home = () => {
+export default function Home() {
   return (
-    <div>
-      <Header/>
-      <AboutMe />
-      <Companies/>
-      <Testimonials/>
-      <Stats/>
-      <Projects />
-      <Footer />
+    <div className="container">
+      <Hero />
+      <About />
     </div>
   );
-};
-
-export default Home;
+}
