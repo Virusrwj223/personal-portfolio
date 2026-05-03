@@ -23,7 +23,7 @@ const hobbyGroups: HobbyGroup[] = [
   },
   {
     title: "Language",
-    items: [{ name: "Chinese" }],
+    items: [{ name: "Chinese" }, { name: "Bengali" }],
   },
   {
     title: "Art",

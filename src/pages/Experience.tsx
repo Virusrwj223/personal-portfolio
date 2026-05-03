@@ -2,6 +2,11 @@ import ExperienceCard from "../components/sections/ExperienceCard";
 import PublicationsList from "../components/sections/PublicationsList";
 import SkillsTable from "../components/sections/SkillsTable";
 
+import astar from "../assets/astar_testimonial and cert.pdf";
+import smartkarma from "../assets/SK-general.pdf";
+import oma from "../assets/oma.png";
+import bare from "../assets/bare.png";
+
 export default function Experience() {
   return (
     <main className="experience-page">
@@ -31,10 +36,10 @@ export default function Experience() {
             description={[
               "I have developed an internal Explainable AI (XAI) library value-added with temporal attributions for the case of demand forecasting under the supervision of Dr Liu Ning",
             ]}
-            // imageSrc="..\..\src\assets\AStar.png"
+            // imageSrc="..\..\assets\AStar.png"
             imageAlt="Work experience"
             buttonText="Testimonial"
-            buttonLink="..\..\src\assets\astar_testimonial and cert.pdf"
+            buttonLink={astar}
             buttonPosition="left"
           />
 
@@ -44,10 +49,10 @@ export default function Experience() {
             description={[
               "Developed an internal data pipeline for the collection of finanical data from public unstructured sources",
             ]}
-            // imageSrc="..\..\src\assets\AStar.png"
+            // imageSrc="..\..\assets\AStar.png"
             imageAlt="Work experience"
             buttonText="Testimonial"
-            buttonLink="src/assets/SK-general.pdf"
+            buttonLink={smartkarma}
             buttonPosition="left"
           />
         </section>
@@ -88,7 +93,7 @@ export default function Experience() {
             description={[
               "A Machine-Learning enabled mobile app to reccommend hidden gems of food places in Singapore",
             ]}
-            imageSrc="..\..\src\assets\oma.png"
+            imageSrc={oma}
             imageAlt="Project preview"
             buttonText="View Project"
             buttonLink="https://omagator-backend.vercel.app/"
@@ -101,7 +106,7 @@ export default function Experience() {
             description={[
               "Won a hackathon with a project that facilitates rentals over the blockchain",
             ]}
-            imageSrc="..\..\src\assets\bare.png"
+            imageSrc={bare}
             imageAlt="Project preview"
             buttonText="View Project"
             buttonLink="https://bar-e.onrender.com/"

@@ -1,3 +1,6 @@
+import resume from "../../assets/HrishirajMandalResume.pdf";
+import raj from "../../assets/raj.jpg";
+
 export default function About() {
   return (
     <section className="about">
@@ -18,11 +21,7 @@ export default function About() {
           </p>
 
           <div className="cta-buttons">
-            <a
-              href="..\..\src\assets\HrishirajMandalResume.pdf"
-              target="_blank"
-              className="btn-primary"
-            >
+            <a href={resume} target="_blank" className="btn-primary">
               Resume
             </a>
 
@@ -33,7 +32,7 @@ export default function About() {
         </div>
 
         <div className="about-image">
-          <img src="..\..\src\assets\raj.jpg" alt="profile" />
+          <img src={raj} alt="profile" />
         </div>
       </div>
     </section>
