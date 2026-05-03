@@ -31,10 +31,10 @@ export default function Experience() {
             description={[
               "I have developed an internal Explainable AI (XAI) library value-added with temporal attributions for the case of demand forecasting under the supervision of Dr Liu Ning",
             ]}
-            // imageSrc="src\assets\AStar.png"
+            // imageSrc="..\..\src\assets\AStar.png"
             imageAlt="Work experience"
             buttonText="Testimonial"
-            buttonLink="src\assets\astar_testimonial and cert.pdf"
+            buttonLink="..\..\src\assets\astar_testimonial and cert.pdf"
             buttonPosition="left"
           />
 
@@ -44,7 +44,7 @@ export default function Experience() {
             description={[
               "Developed an internal data pipeline for the collection of finanical data from public unstructured sources",
             ]}
-            // imageSrc="src\assets\AStar.png"
+            // imageSrc="..\..\src\assets\AStar.png"
             imageAlt="Work experience"
             buttonText="Testimonial"
             buttonLink="src/assets/SK-general.pdf"
@@ -88,7 +88,7 @@ export default function Experience() {
             description={[
               "A Machine-Learning enabled mobile app to reccommend hidden gems of food places in Singapore",
             ]}
-            imageSrc="src\assets\oma.png"
+            imageSrc="..\..\src\assets\oma.png"
             imageAlt="Project preview"
             buttonText="View Project"
             buttonLink="https://omagator-backend.vercel.app/"
@@ -101,7 +101,7 @@ export default function Experience() {
             description={[
               "Won a hackathon with a project that facilitates rentals over the blockchain",
             ]}
-            imageSrc="src\assets\bare.png"
+            imageSrc="..\..\src\assets\bare.png"
             imageAlt="Project preview"
             buttonText="View Project"
             buttonLink="https://bar-e.onrender.com/"
