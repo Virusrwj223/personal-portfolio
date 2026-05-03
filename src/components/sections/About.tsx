@@ -51,7 +51,7 @@ export default function About() {
             <div className="award-card">
               <h4>1st Place – NUS Fintech Summit Hackathon 2024</h4>
               <p>
-                Awarded $2000 and led team to the development of a winning
+                Awarded $5000 and led team to the development of a winning
                 solution.
               </p>
             </div>
