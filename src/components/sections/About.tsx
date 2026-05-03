@@ -19,7 +19,7 @@ export default function About() {
 
           <div className="cta-buttons">
             <a
-              href="src\assets\HrishirajMandalResume.pdf"
+              href="..\..\src\assets\HrishirajMandalResume.pdf"
               target="_blank"
               className="btn-primary"
             >
@@ -33,7 +33,7 @@ export default function About() {
         </div>
 
         <div className="about-image">
-          <img src="src\assets\raj.jpg" alt="profile" />
+          <img src="..\..\src\assets\raj.jpg" alt="profile" />
         </div>
       </div>
     </section>
