@@ -664,3 +664,121 @@ html {
     grid-template-columns: 1fr;
   }
 }
+
+/* ABOUT AWARDS (UPGRADED) */
+.about-awards {
+  margin-top: 40px;
+}
+
+.about-awards h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  color: var(--text);
+}
+
+/* grid layout */
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+/* card */
+.award-card {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 18px;
+  background: transparent;
+  transition:
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* subtle emphasis on hover */
+.award-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.award-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--accent-soft);
+}
+
+.award-card p {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .awards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* make entire card clickable */
+.award-card-link {
+  text-decoration: none;
+  display: block;
+}
+
+/* improve hover feedback */
+.award-card-link:hover .award-card {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* cursor feedback */
+.award-card {
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 10px; /* keep some spacing from content */
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.footer-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  font-size: 18px;
+  transition: all 0.2s ease;
+}
+
+/* subtle hover (fits your minimal theme) */
+.footer-icon:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-copy {
+  font-size: 13px;
+  color: var(--muted);
+}

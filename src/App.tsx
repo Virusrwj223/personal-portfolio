@@ -5,7 +5,7 @@ import Hobbies from "./pages/Hobbies";
 import Publications from "./pages/Publications";
 import Navbar from "./components/layout/Navbar";
 import Contact from "./pages/Contact";
-// import Footer from "./components/layout/Footer";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         <Route path="/hobbies" element={<Hobbies />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

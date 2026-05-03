@@ -1,5 +1,7 @@
 import resume from "../../assets/HrishirajMandalResume.pdf";
 import raj from "../../assets/raj.jpg";
+import hackathon from "../../assets/hackathon.jpg";
+import fellowship from "../../assets/fellowship.jpg";
 
 export default function About() {
   return (
@@ -33,6 +35,42 @@ export default function About() {
 
         <div className="about-image">
           <img src={raj} alt="profile" />
+        </div>
+      </div>
+
+      <div className="about-awards">
+        <h3>Key Highlights</h3>
+
+        <div className="awards-grid">
+          <a
+            href={hackathon}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="award-card-link"
+          >
+            <div className="award-card">
+              <h4>1st Place – NUS Fintech Summit Hackathon 2024</h4>
+              <p>
+                Awarded $2000 and led team to the development of a winning
+                solution.
+              </p>
+            </div>
+          </a>
+
+          <a
+            href={fellowship}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="award-card-link"
+          >
+            <div className="award-card">
+              <h4>SmartKarma Fellowship 2025</h4>
+              <p>
+                Awarded ~$5000 for a competitive fellowship recognising
+                technical potential, leadership and impactful work.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
