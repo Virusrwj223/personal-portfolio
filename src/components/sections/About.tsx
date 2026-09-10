@@ -9,17 +9,24 @@ export default function About() {
       <div className="about-grid">
         <div className="about-text">
           <p className="text-secondary">
-            I am a Computer Science student at NUS with interests in{" "}
-            <strong>
-              formal verification, security and programming languages
-            </strong>
-            .
+            I am a Computer Science student at National University of Singapore
+            (NUS) with interests in{" "}
+            <strong>formal methods and cyber-security</strong>.
           </p>
 
           <p>
-            I enjoy working on problems at the intersection of programming
-            languages and real-world systems, especially where correctness and
-            security matter.
+            <strong>Research Statement: </strong>I envison a world ran by
+            reliable systems guaranteed by the precision of Mathematics.
+          </p>
+
+          <p>
+            Currently, I am involved in ensuring cyber-security properties of
+            computing hardware for my final year research work. I had spent an
+            undergraduate summer in the United Kingdom, in the lab of Mirco
+            Giacobbe, to formally verify and improve a space protocol. My
+            previous works involves implementing a interpreter for a new
+            specification language and, improving the explainability of
+            black-box forecasting models.
           </p>
 
           <div className="cta-buttons">
